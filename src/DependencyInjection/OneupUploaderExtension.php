@@ -214,6 +214,7 @@ class OneupUploaderExtension extends Extension
                     $this->container
                         ->register($storageName, $storageClass)
                         ->addArgument($config['directory'])
+                        ->setPublic(true)
                     ;
                     break;
                 case 'gaufrette':
